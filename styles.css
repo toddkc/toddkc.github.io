@@ -1,0 +1,186 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: aliceblue;
+}
+nav{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background-color: rgba(0,0,0,0.3);
+	display: flex;
+	justify-content: space-between;
+}
+.containerLeft{
+	flex: 1;
+	display: flex;
+	justify-content: flex-start;
+}
+.containerContact{
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+.containerRight{
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+}
+nav span{
+	padding: 0.5em;
+}
+nav a{
+	flex: 1;
+	color: white;
+	text-decoration: none;
+	padding: 0.5em;
+	/*display: block;*/
+}
+nav a:hover{
+	color: #aacae6;
+}
+.containerInfo{
+	display: flex;
+	height: 100vh;
+}
+.infoMe{
+	flex:2;
+	/*background-color: red;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.infoMe h1{
+	font-family: 'Merriweather', serif;
+	letter-spacing: 0.2em;
+	font-size: 3em;
+	/*border-bottom: 1px solid black;*/
+	margin: 1em 0;
+}
+.imgMe{
+	flex:1;
+	/*background-color: black;*/
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.profilePic{
+	height: 200px;
+}
+.infoMe p{
+	font-family: 'Dosis', sans-serif;
+	margin: 0 8em 1em 8em;
+	line-height: 1.3em;
+	letter-spacing: 0.1em;
+}
+.toolkitContainer{
+	width: 80%;
+	padding: 3em 0;
+	margin: 1em auto 5em auto;
+	background-color: ivory;
+  box-shadow:
+    0 -1px 1px rgba(0,0,0,0.15),
+    0 -10px 0 -5px #eee,
+    0 -10px 1px -4px rgba(0,0,0,0.15),
+    0 -20px 0 -10px #eee,
+    0 -20px 1px -9px rgba(0,0,0,0.15),
+    0 1px 1px rgba(0,0,0,0.15),
+    0 10px 0 -5px #eee,
+    0 10px 1px -4px rgba(0,0,0,0.15),
+    0 20px 0 -10px #eee,
+    0 20px 1px -9px rgba(0,0,0,0.15);
+}
+.toolkitRow{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.toolkitItem{
+	max-width: 125px;
+	max-height: 125px;
+	/*background-color: yellow;*/
+	margin: 1em 0;
+}
+.toolkitImg{
+	max-width: 125px;
+	max-height: 125px;
+	min-width: 125px;
+	min-height: 125px;
+}
+.toolkitImg:hover{
+	border: 1px solid red;
+}
+.portfolioContainer{
+	padding: 3em 0;
+}
+.portfolioRow{
+	display: flex;
+	justify-content: space-around;
+}
+.portfolioItem{
+	flex: 1;
+	height: 500px;
+	border: 1px solid #aacae6;
+	border-radius: 10px;
+	background-color: #fff6f0;
+	margin: 2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.portfolioImg{
+	width: 300px;
+	height: 300px;
+	margin-bottom: 1em;
+	border: 1px solid black;
+	display: flex;
+}
+.portfolioImg a{
+	/*display: block;*/
+	flex:1;
+}
+.colorPic{
+	background-image: url(images/colors.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.storagePic{
+	background-image: url(images/storage.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.portfolioText p{
+	line-height: 1.5em;
+	font-family: 'Dosis', sans-serif;
+	margin: 0 2em;
+}
+footer{
+	width: 100%;
+	max-height: 150px;
+	min-height: 150px;
+	background-image: url(images/kansascity.jpg);
+	background-size: cover;
+	/*background-size: contain;*/
+	background-repeat: no-repeat;
+	position: relative;
+}
+.copyright{
+	font-family: 'Dosis', sans-serif;
+	position: absolute;
+	top:20px;
+	left:50px;
+}
+.location{
+	font-family: 'Dosis', sans-serif;
+	position: absolute;
+	top:20px;
+	right:50px;
+}
