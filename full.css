@@ -48,7 +48,7 @@ nav a:hover{
 	height: 100vh;
 }
 .infoMe{
-	flex:2;
+	flex:3;
 	/*background-color: red;*/
 	display: flex;
 	flex-direction: column;
@@ -72,6 +72,9 @@ nav a:hover{
 .profilePic{
 	height: 200px;
 	border-radius: 50%;
+	margin-top: 6em;
+	/*border: 3px solid #966f33;*/
+	/*padding: 5px;*/
 }
 .infoMe p{
 	font-family: 'Dosis', sans-serif;
