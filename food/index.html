@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Food Info</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+
+		<div class="search">
+			<input type="text" value="" placeholder="Type search here..." id="searchInput">
+			<input type="submit" value="Search" id="searchButton">
+		</div>
+
+		<div class="itemContainer">
+
+			<div class="itemImage"></div>
+
+			<h3 id="itemTitle"></h3>
+
+			<div class="itemInfo">
+				<div class="itemDetailsPanel">
+					<p class="itemDetails">Serving Size: </p>
+					<p class="itemDetails">Serving Amount: </p>
+					<p class="itemDetails">Calories: </p>
+					<p class="itemDetails">Cholesterol: </p>
+					<p class="itemDetails">Fiber: </p>
+				</div>
+
+				<div class="itemDetailsPanel">
+					<p class="itemDetails">Protein: </p>
+					<p class="itemDetails">Saturated Fat: </p>
+					<p class="itemDetails">Total Fat: </p>
+					<p class="itemDetails">Carbs: </p>
+					<p class="itemDetails">Sodium: </p>
+				</div>
+			</div>
+
+			<div class="foodSave">
+				<input type="submit" value="Save to Recipe" id="saveButton">
+			</div>
+
+		</div>
+
+		<div class="recipeContainer">
+			<h3 id="recipeTitle"></h3>
+			<div class="recipeInfo">
+				<div class="recipeDetailsPanel">
+					<p class="recipeDetails"></p>
+					<p class="recipeDetails"></p>
+					<p class="recipeDetails"></p>
+					<p class="recipeDetails"></p>
+				</div>
+
+				<div class="recipeDetailsPanel">
+					<p class="recipeDetails"></p>
+					<p class="recipeDetails"></p>
+					<p class="recipeDetails"></p>
+					<p class="recipeDetails"></p>
+				</div>
+			</div>
+			<div class="recipeButtons">
+				<input type="submit" value="Hide Recipe" id="hideRecipe">
+				<input type="submit" value="Rename Recipe" id="renameRecipe">
+				<input type="submit" value="Delete Recipe" id="deleteRecipe">
+			</div>
+
+		</div>
+
+		<div class="recipeBookPanel"></div>
+
+		<div class="menuBar">
+			<div class="">
+				<input id="recipeBookButton" type="submit" value="Recipe Book">
+				<input id="newRecipe" type="submit" value="New Recipe">
+			</div>
+			<p id="currentRecipe"></p>
+		</div>
+
+		<div class="searchFail">
+			<p>Nothing found, sorry...</p>
+		</div>
+		<div class="saved">
+			<h1>Saved!</h1>
+		</div>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
