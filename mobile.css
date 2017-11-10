@@ -202,8 +202,8 @@ nav a{
 	background-size: cover;
 	box-shadow: 8px 8px 10px #aaa;
 }
-.storagePic{
-	background-image: url(images/storage.png);
+.foodPic{
+	background-image: url(images/foodfinder.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
