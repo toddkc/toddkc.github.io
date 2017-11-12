@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>velcro.css</title>
+		<link rel="stylesheet" href="velcro.css">
+		<link rel="stylesheet" href="demo.css">
+	</head>
+	<body>
+
+		<nav id="top" class="bg-gray">
+			<div class="logo">
+				<a href="#top"><img src="logo.jpg" alt="velcro logo"></a>
+			</div>
+			<div class="nav-menu">
+				<ul class="nav-left">
+					<li><a href="https://github.com/toddkc/velcro.css" target="_blank">Download</a></li>
+				</ul>
+				<ul class="nav-right">
+					<li><a href="#grid">Grid</a></li>
+					<li><a href="#buttons">Buttons</a></li>
+					<li><a href="#forms">Forms</a></li>
+					<li><a href="#tables">Tables</a></li>
+					<li><a href="#nav">Navigation</a></li>
+					<li><a href="#tips">Tips</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<header class="bg-light">
+			<div>
+				<h1 class="xl bold">velcro.css</h1>
+				<h3 class="lg normal">stick around</h3>
+				<p class="frame-small">Velcro is a css library designed to help you quickly and easily stick your html elements where they need to go, and make them look good when they get there.</p>
+			</div>
+		</header>
+
+		<div id="grid" class="grid-row">
+			<div class="grid-box-6 border">
+				<div class="grid-container">
+					<h3>Grid</h3>
+					<p>Velcro has a standard 12-column grid system.</p>
+				</div>
+			</div>
+			<div class="grid-box-6 border">
+				<div class="grid-container">
+					<p>This box is 6 columns wide.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="grid-row">
+			<div class="grid-box-12 border">
+				<div class="grid-container">
+					<h3>Grid Row</h3>
+					<p>To create a row: &ltdiv class = "grid-row"&gt&lt/div&gt</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="grid-row">
+			<div class="grid-box-3 border">
+				<div class="grid-container">
+					<p>&ltdiv class = "grid-box-3"&gt&lt/div&gt</p>
+				</div>
+			</div>
+			<div class="grid-box-6 border">
+				<div class="grid-container">
+					<h3>Grid Box</h3>
+					<p>A row contains between 1 and 12 boxes.</p>
+				</div>
+			</div>
+			<div class="grid-box-3 border">
+				<div class="grid-container">
+					<p>&ltdiv class = "grid-box-3"&gt&lt/div&gt</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="grid-row">
+			<div class="grid-box-2 border"></div>
+			<div class="grid-box-4 border"></div>
+			<div class="grid-box-6 border">
+				<div class="grid-container">
+					<h3>Grid Container</h3>
+					<p>A box needs a container:</p>
+					<p>&ltdiv class = "grid-container"&gt&lt/div&gt</p>
+					<p>This is where you stick your headers and paragraphs.</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="buttons" class="grid-row space border">
+			<div class="grid-box-4">
+				<div class="grid-container">
+					<h3>Buttons</h3>
+				</div>
+			</div>
+			<div class="grid-box-8">
+				<div class="grid-container space">
+					<button class="button">Button</button>
+					<p>&ltbutton class = "button"&gtButton&lt/button&gt</p>
+					<button class="button confirm">Button</button>
+					<p>&ltbutton class = "button confirm"&gtButton&lt/button&gt</p>
+					<button class="button alert">Button</button>
+					<p>&ltbutton class = "button alert"&gtButton&lt/button&gt</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="forms" class="grid-row space border">
+			<div class="grid-box-4">
+				<div class="grid-container">
+					<h3>Forms</h3>
+				</div>
+			</div>
+			<div class="grid-box-4">
+				<div class="grid-container">
+					<!-- formatting off for snippet -->
+					<pre class="formSnippet">
+
+&ltform class = "contact"&gt
+	&ltdiv&gt
+		&ltlabel&gtName&lt/label&gt
+		&ltinput type="text"&gt
+	&lt/div&gt
+	&ltdiv&gt
+		&ltlabel&gtEmail&lt/label&gt
+		&ltinput type="email"&gt
+	&lt/div&gt
+	&ltdiv&gt
+		&ltlabel&gtSubject&lt/label&gt
+		&ltinput type="text"&gt
+	&lt/div&gt
+	&ltdiv&gt
+		&ltlabel&gtMessage&lt/label&gt
+		&lttextarea&gt&lt/textarea&gt
+	&lt/div&gt
+	&ltdiv&gt
+		&ltinput type="submit"&gt
+	&lt/div&gt
+&lt/form&gt
+					</pre>
+					<!-- formatting off for snippet -->
+				</div>
+			</div>
+			<div class="grid-box-4">
+				<div class="grid-container">
+					<form class="contact">
+						<div>
+							<label>Name</label>
+							<input type="text">
+						</div>
+						<div>
+							<label>Email</label>
+							<input type="email">
+						</div>
+						<div>
+							<label>Subject</label>
+							<input type="text">
+						</div>
+						<div>
+							<label>Message</label>
+							<textarea></textarea>
+						</div>
+						<div>
+							<input type="submit">
+						</div>
+				</form>
+				</div>
+			</div>
+		</div>
+
+		<div id="tables" class="grid-row space border">
+			<div class="grid-box-2">
+				<div class="grid-container">
+					<h3>Tables</h3>
+				</div>
+			</div>
+			<div class="grid-box-2">
+				<div class="grid-container">
+					<p>Quickly create great looking tables.</p>
+					<p>No special classes required!</p>
+				</div>
+			</div>
+			<div class="grid-box-2">
+				<div class="grid-container">
+					<table>
+						<tr>
+							<th>Very</th>
+							<th>Important</th>
+							<th>Things</th>
+						</tr>
+						<tr>
+							<td>Name</td>
+							<td>Data</td>
+							<td>Stuff</td>
+						</tr>
+						<tr>
+							<td>Name</td>
+							<td>Data</td>
+							<td>Stuff</td>
+						</tr>
+						<tr>
+							<td>Name</td>
+							<td>Data</td>
+							<td>Stuff</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div id="nav" class="border space">
+			<div class="grid-row">
+				<div class="grid-box-6">
+					<div class="grid-container">
+						<h3>Navigation Bar</h3>
+					</div>
+				</div>
+			</div>
+			<div class="grid-row">
+				<div class="grid-box-2">
+					<div class="grid-container">
+						<p>First create a nav tag and set its color.  Inside that create a div with class = "logo" if you want to use a logo.  After your logo div (not inside it) create another div with class = "nav-menu".</p>
+					</div>
+				</div>
+				<div class="grid-box-2">
+					<div class="grid-container">
+						<p>Inside "nav-menu" create a ul with class="nav-left", and another with class="nav-right".  These are not required, you can use both or either as you need.  The li's inside of these will contain anchors that populate your nav menu.</p>
+					</div>
+				</div>
+				<div class="grid-box-2">
+					<div class="grid-container">
+						<p>To add a dropdown simply give the li a class = "dropdown".  It will still need an anchor, and add another ul inside the li.  The li's inside this nested list will populate your dropdown!</p>
+					</div>
+				</div>
+			</div>
+			<nav class="bg-blue">
+				<div class="logo">
+					<a href="#"><img src="logo.jpg" alt="velcro logo"></a>
+				</div>
+				<div class="nav-menu">
+					<ul class="nav-left">
+						<li><a href="#">Link1</a></li>
+						<li class="dropdown"><a href="#">Dropdown</a>
+							<ul class="bg-blue">
+								<li><a href="#">Drop1</a></li>
+								<li><a href="#">Drop2</a></li>
+								<li><a href="#">Drop3</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Link3</a></li>
+					</ul>
+					<ul class="nav-right">
+						<li class="dropdown"><a href="#">Dropdown</a>
+							<ul class="bg-blue">
+								<li><a href="#">Drop1</a></li>
+								<li><a href="#">Drop2</a></li>
+								<li><a href="#">Drop3</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Link4</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="grid-row">
+				<div class="grid-box-6">
+					<div class="grid-container">
+						<p>Code snippet for above menu:</p>
+
+						<!-- format off for text area alignment -->
+<textarea class="navSnippet">
+	<nav class="bg-blue">
+		<div class="logo">
+			<a href="#"><img src="logo.jpg" alt="velcro logo"></a>
+		</div>
+		<div class="nav-menu">
+			<ul class="nav-left">
+				<li><a href="#">Link1</a></li>
+				<li class="dropdown"><a href="#">Dropdown</a>
+					<ul class="bg-blue">
+						<li><a href="#">Drop1</a></li>
+						<li><a href="#">Drop2</a></li>
+						<li><a href="#">Drop3</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Link3</a></li>
+			</ul>
+			<ul class="nav-right">
+				<li class="dropdown"><a href="#">Dropdown</a>
+					<ul class="bg-blue">
+						<li><a href="#">Drop1</a></li>
+						<li><a href="#">Drop2</a></li>
+						<li><a href="#">Drop3</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Link4</a></li>
+			</ul>
+		</div>
+	</nav>
+</textarea>
+<!-- format off for textare alignment -->
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="tips" class="grid-row">
+			<div class="grid-box-6">
+				<div class="grid-container">
+					<h3>Colors</h3>
+					<p class="text-red">Set text color with class = "text-red"</p>
+					<p class="bg-grey">Set background color with class = "bg-grey"</p>
+					<p>Try white, light, grey, blue, red, yellow, green, and black.</p>
+					<h3>Font</h3>
+					<p class="large">Change font sizing with class = "xl"</p>
+					<p>Try small, normal, large, xl, and bold.</p>
+				</div>
+			</div>
+			<div class="grid-box-6">
+				<div class="grid-container">
+					<h3>Layout</h3>
+					<p class="space">Give an element some room with class = "space"</p>
+					<p class="border">Add a border with class = "border"</p>
+					<p>Easily adjust paragraph margins with class = "frame-small"</p>
+					<p>Try frame-small, frame-medium, and frame-large.</p>
+				</div>
+			</div>
+		</div>
+
+		<footer class="bg-light">
+			<div class="grid-row">
+				<div class="grid-box-9">
+					<div class="grid-container">
+						<p>Footers are automagically styled too.  Just add a text-color or bg-color class!</p>
+					</div>
+				</div>
+				<div class="grid-box-3">
+					<div class="grid-container">
+						<p class="small">copyright 2017</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+	</body>
+</html>
