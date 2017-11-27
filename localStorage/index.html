@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>exercise9</title>
+		<link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive|Fascinate+Inline|Indie+Flower" rel="stylesheet">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="topHalf">
+				<h1>WEB STORAGE</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="bottomHalf">
+				<div class="imageContainer">
+					<img src="" alt="">
+				</div>
+				<div class="inputSection">
+					<div class="color">
+						<label for="backgroundColor">Choose background color:</label>
+						<input type="color" name="backgroundColor" placeholder="#FFFFFF">
+					</div>
+					<div class="font">
+						<label for="font">Choose font style:</label>
+						<select class="font-family" name="font_family">
+							<option default disabled selected>Select a font</option>
+							<option value="serif">Serif</option>
+							<option value="sans-serif">Sans-Serif</option>
+							<option value="Cedarville Cursive">Cursive</option>
+							<option value="Fascinate Inline">Fantasy</option>
+							<option value="monospace">Monospace</option>
+						</select>
+					</div>
+					<div class="image">
+						<label for="image">Choose image:</label>
+						<select class="image" name="image">
+							<option default disabled selected>Select an image</option>
+							<option value="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Florida_Box_Turtle_Digon3_re-edited.jpg/220px-Florida_Box_Turtle_Digon3_re-edited.jpg">Turtle</option>
+							<option value="http://www.gcfa.com/assets/images/theme/home-ferret-trio-01.jpg">Ferret</option>
+							<option value="https://animalso.com/wp-content/uploads/2016/10/Siborgi.jpg">Siborgi</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="storageWarning">
+			<p>Your browser does not support storage.  Consider upgrading.  This page displays best on Safari, Chrome, and Firefox.</p>
+		</div>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
