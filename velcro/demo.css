@@ -1,5 +1,39 @@
-.navSnippet{
-	padding: 1rem 0;
-	min-width: 500px;
-	height: 465px;
+.navSnippet {
+  padding: 1rem 0;
+  min-width: 500px;
+  height: 465px;
+}
+
+.mobile-dropdown {
+  display: none;
+}
+
+.mobile-menu {
+  width: 75px;
+  height: 25px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.mobile-menu span {
+  margin: 0 auto;
+  display: block;
+  padding: 2px;
+  width: 50px;
+  border-bottom: 3px solid black;
+}
+
+@media(max-width: 780px) {
+  .nav-right {
+    display: none;
+  }
+  .mobile-dropdown {
+    display: block;
+  }
+}
+
+@media (max-width: 540px) {
+  textarea {
+    max-width: 400px;
+  }
 }
