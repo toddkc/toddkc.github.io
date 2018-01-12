@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todd Belcher</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="bulma.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="page">
+    <nav>
+      <div id="contact" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <div class="info">
+            <a href="mailto:todd@todd-belcher.com">todd@todd-belcher.com</a>
+            <a href="tel:+1-816-590-9405">816-590-9405</a>
+          </div>
+        </div>
+        <button id="closeModal" class="modal-close is-large" aria-label="close"></button>
+      </div>
+      <div class="menu">
+        <div class="links">
+          <a title="GitHub" href="https://github.com/toddkc" target="_blank">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+          <a title="LinkedIn" href="https://www.linkedin.com/in/todd-belcher" target="_blank">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a title="Resume" href="./src/assets/ToddBelcher.pdf" target="_blank">
+            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+          </a>
+          <a title="Contact Me" id="openContact">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="landing">
+      <section class="hero">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              Todd Belcher
+            </h1>
+            <h3 class="subtitle">
+              Freelance full-stack web and game developer.
+            </h3>
+          </div>
+        </div>
+      </section>
+      <section class="call">
+        <div class="web code">
+          <div class="callTextDiv">
+            <p class="callText">Do you need a website?</p>
+            <p class="callText">Maybe you have an idea for an app?</p>
+          </div>
+        </div>
+        <div class="game gallery">
+          <div class="callTextDiv">
+            <p class="callText">Need help with your next game release?</p>
+            <p class="callText">Want to get into virtual reality?</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Projects</h1>
+        <div class="card">
+          <header class="card-header">
+            <p class="card-header-title">
+              Tabletop Defense
+            </p>
+          </header>
+          <div class="card-content">
+            <div class="content">
+              <div class="card-image">
+                <img src="./assets/tabletop.png" alt="tabletop defense logo">
+              </div>
+              Virtual reality game created for the Oculus Rift and HTC Vive. It was made with Unity, and coded in C#.
+            </div>
+          </div>
+          <footer class="card-footer">
+            <a href="https://github.com/toddkc/Tabletop-Defense-Lite" target="_blank" class="card-footer-item">GitHub</a>
+            <a href="https://harmonicminor.itch.io/tabletop-defense" target="_blank" class="card-footer-item">Itch.io</a>
+            <a href="https://youtu.be/Uaqox-ExtqM" target="_blank" class="card-footer-item">YouTube</a>
+          </footer>
+        </div>
+        <div class="card">
+          <header class="card-header">
+            <p class="card-header-title">
+              Task Roulette
+            </p>
+          </header>
+          <div class="card-content">
+            <div class="content">
+              <div class="card-image">
+                <img src="./assets/app.png" alt="task roulette screenshot">
+              </div>
+              Web-app that allows users to create and store tasks. The app will keep track of when the task was last done, and alert the user when it needs to be done again. The back-end is a MySQL database and a Node/Express app hosted on a DigitalOcean droplet. The
+              front-end is a Vue.js app hosted on Heroku.
+            </div>
+          </div>
+          <footer class="card-footer">
+            <a href="https://github.com/toddkc/taskroulette-server" target="_blank" class="card-footer-item">GitHub - server</a>
+            <a href="https://github.com/toddkc/taskroulette-heroku" target="_blank" class="card-footer-item">GitHub - client</a>
+            <a href="https://taskroulette.herokuapp.com" target="_blank" class="card-footer-item">Website</a>
+          </footer>
+        </div>
+        <div class="card">
+          <header class="card-header">
+            <p class="card-header-title">
+              Gallery VR
+            </p>
+          </header>
+          <div class="card-content">
+            <div class="content">
+              <div class="card-image">
+                <img src="./assets/gallery2.png" alt="gallery screenshot">
+              </div>
+              Virtual Reality environment designed for artists to showcase their work. Created with Unity and coded in C#. Works with Oculus Rift, HTC Vive, Android devices, Google Cardboard, and Windows 10.
+            </div>
+          </div>
+          <footer class="card-footer">
+            <a href="https://github.com/toddkc/GalleryVR" target="_blank" class="card-footer-item">GitHub</a>
+            <a href="https://harmonicminor.itch.io/gallery-vr" target="_blank" class="card-footer-item">Itch.io</a>
+            <a href="https://youtu.be/vOoMcONrTHY" target="_blank" class="card-footer-item">YouTube</a>
+          </footer>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="card">
+          <header class="card-header">
+            <p class="card-header-title">
+              Skills
+            </p>
+          </header>
+          <div class="card-content">
+            <div class="content">
+              Feel free to look through my GitHub to see examples of the tools I have worked with. I have made express apps with node using passport for user validation, sequelize for database integration, express-session for session persistance. I have made vue apps
+              with vuex for state management and axios for api requests, using frameworks like bulma and bootstrap. I've made games with unity using mecanim and blender for modeling and animating, and created character controllers for 2D, 3D, and virtual
+              reality. Some highlights:
+              <ul>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Vue.js</li>
+                <li>JavaScript</li>
+                <li>C#</li>
+                <li>Unity</li>
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>jQuery</li>
+                <li>Passport.js</li>
+                <li>Sequelize</li>
+                <li>MySQL</li>
+                <li>MondoDB</li>
+                <li>Git</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="modal.js"></script>
+</body>
+
+</html>
