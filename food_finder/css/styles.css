@@ -1,0 +1,315 @@
+/*
+colors:
+c5924e dbrown
+e1c9a7 lbrown
+4a81a7 blue
+715c68 gray
+b32f49 red
+*/
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+}
+body{
+	background-color: #c5924e;
+}
+/*searchbar*/
+.search{
+	margin: 2em auto;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+/*search, recipe, menu buttons*/
+input{
+	letter-spacing: 0.1em;
+	padding: 0.5em;
+	margin: 0.5em;
+}
+input:hover{
+	cursor: pointer;
+	border:1px solid black;
+}
+/*main food item panel*/
+.itemContainer{
+	width: 40%;
+	margin: auto;
+	padding-bottom: 1em;
+	background-color: #e1c9a7;
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 10px;
+}
+/*name of item*/
+#itemTitle{
+	margin-bottom: 0.5em;
+}
+/*food info panel in main*/
+.itemInfo{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/*image of food*/
+.itemImage{
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 150px;
+	width: 150px;
+}
+/*panels inside iteminfo*/
+.itemDetailsPanel{
+	display: none;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 0 1em;
+}
+/*individual item details*/
+.itemDetails{
+	margin: 0.3em 0;
+	/*font-family: monospace;*/
+}
+/*button to save item to recipe*/
+#saveButton{
+	visibility: hidden;
+}
+/*main div about recipe*/
+.recipeContainer{
+	width: 40%;
+	margin: auto;
+	padding: 1em;
+	background-color: #e1c9a7;
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 10px;
+}
+/*inner div inside container, holds panels*/
+.recipeInfo{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1em 0;
+}
+/*panels inside info, holds details*/
+.recipeDetailsPanel{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 0 1em;
+}
+/*individual item details*/
+.recipeDetails{
+	margin: 0.3em 0;
+	/*font-family: monospace;*/
+}
+/*main panel with title and ingredients*/
+.recipeIngredientsPanel{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+/*inner panel with ingredients in recipe*/
+.recipeIngredients{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+/*individual ingredient*/
+.ingredient{
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+}
+/*image saved with ingredient*/
+.ingredientImage{
+	border: 1px solid black;
+	height: 50px;
+	width: 50px;
+	margin-right: 0.5em;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.ingredientImage:hover{
+	cursor: pointer;
+	border: 1px solid red;
+}
+/*serving size*/
+.ingredientAmount{
+	display: flex;
+	align-items: center;
+}
+/*dropdown container*/
+.amountContainer{
+	display: flex;
+	align-items: center;
+}
+/*dropdown item*/
+select{
+	margin-left: 0.5em;
+}
+/*buttons for recipe panel*/
+.recipeButtons{
+	margin-top: 0.5em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/*button to delete recipe*/
+#deleteRecipe{
+	background-color: #b32f49;
+}
+/*saved and search overlays*/
+.searchFail, .saved{
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0,0,0,0.8);
+	color: white;
+}
+/*keep footer at bottom regardless of content size*/
+.content{
+	margin-bottom: 90px;
+}
+/*footer*/
+.menuBar{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5em;
+	background-color: #4a81a7;
+}
+/*each item in footer*/
+.menuBar div{
+	flex:1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/*help link in menu*/
+.menuBar a{
+	padding: 0.5em 1em;
+	border-radius: 10px;
+	letter-spacing: 0.1em;
+	color: black;
+}
+.menuBar a:hover{
+	letter-spacing: 0.2em;
+	background-color: #b32f49;
+	border: 1px solid white;
+}
+/*icon for current recipe*/
+.icon{
+	min-height: 50px;
+	min-width: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	background-image: url('../images/recipeIcon.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	font-weight: 800;
+	text-shadow: 0px 0px 3px #b32f49, -1px -1px 3px #b32f49, 1px 1px 3px #b32f49;
+}
+/*this isn't working right so leave it commented out until the link works*/
+.icon:hover{
+	cursor: pointer;
+	background-image: url('../images/recipeIcon-red.png');
+}
+/*recipe book*/
+.recipeBookPanel{
+	display: none;
+	max-width: 50%;
+	margin: auto;
+	background-color: #e1c9a7;
+	padding: 1em;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 10px;
+}
+/*icons inside recipe book*/
+.recipe{
+	height: 100px;
+	width: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	margin: 0.5em;
+	background-image: url('../images/recipeIcon.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	font-weight: 800;
+	text-shadow: 0px 0px 3px #b32f49, -1px -1px 3px #b32f49, 1px 1px 3px #b32f49;
+}
+.recipe:Hover{
+	cursor: pointer;
+	border-radius: 10px;
+	background-image: url('../images/recipeIcon-red.png');
+}
+/*text panel div on help screen*/
+.helpContainer{
+	display: flex;
+	justify-content: center;
+}
+/*individual panels inside container*/
+.help{
+	width: 400px;
+	margin: 2em 1em 1em 1em;
+	padding: 1em;
+	background-color: #e1c9a7;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 10px;
+}
+/*help header*/
+.help h3{
+	margin-bottom: 0.5em;
+}
+/*help paragraph*/
+.help p{
+	line-height: 1.5em;
+	text-align: left;
+	margin-bottom: 1em;
+}
+/*logo on main page*/
+.logo{
+	margin: auto;
+	border-radius: 10px;
+	height: 400px;
+	width: 800px;
+	background-image: url('../images/Adobe_Spark.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}

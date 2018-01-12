@@ -1,175 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Todd Belcher">
+  <meta name="description" content="Profile Page">
   <title>Todd Belcher</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="bulma.css">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather%7cDosis" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <link rel='stylesheet' media='screen and (min-width: 1200px)' href='full.css'>
+  <link rel='stylesheet' media='screen and (max-width: 1199px) and (min-width: 541px)' href='middle.css'>
+  <link rel='stylesheet' media='screen and (max-width: 540px)' href='mobile.css'>
+
+
 </head>
 
 <body>
-  <div class="page">
-    <nav>
-      <div id="contact" class="modal">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-          <div class="info">
-            <a href="mailto:todd@todd-belcher.com">todd@todd-belcher.com</a>
-            <a href="tel:+1-816-590-9405">816-590-9405</a>
-          </div>
-        </div>
-        <button id="closeModal" class="modal-close is-large" aria-label="close"></button>
-      </div>
-      <div class="menu">
-        <div class="links">
-          <a title="GitHub" href="https://github.com/toddkc" target="_blank">
-            <i class="fa fa-github" aria-hidden="true"></i>
-          </a>
-          <a title="LinkedIn" href="https://www.linkedin.com/in/todd-belcher" target="_blank">
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-          </a>
-          <a title="Resume" href="./src/assets/ToddBelcher.pdf" target="_blank">
-            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-          </a>
-          <a title="Contact Me" id="openContact">
-            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-          </a>
-        </div>
-      </div>
-    </nav>
-    <div class="landing">
-      <section class="hero">
-        <div class="hero-body">
-          <div class="container">
-            <h1 class="title">
-              Todd Belcher
-            </h1>
-            <h3 class="subtitle">
-              Freelance full-stack web and game developer.
-            </h3>
-          </div>
-        </div>
-      </section>
-      <section class="call">
-        <div class="web code">
-          <div class="callTextDiv">
-            <p class="callText">Do you need a website?</p>
-            <p class="callText">Maybe you have an idea for an app?</p>
-          </div>
-        </div>
-        <div class="game gallery">
-          <div class="callTextDiv">
-            <p class="callText">Need help with your next game release?</p>
-            <p class="callText">Want to get into virtual reality?</p>
-          </div>
-        </div>
-      </section>
+  <!-- navbar -->
+  <nav>
+    <div class="containerLeft">
+      <div class="contactLink"><a href="#pageTop"><span class="fa fa-home fa-lg" title="Home"></span></a></div>
     </div>
-    <section class="section">
-      <div class="container">
-        <h1 class="title">Projects</h1>
-        <div class="card">
-          <header class="card-header">
-            <p class="card-header-title">
-              Tabletop Defense
-            </p>
-          </header>
-          <div class="card-content">
-            <div class="content">
-              <div class="card-image">
-                <img src="./assets/tabletop.png" alt="tabletop defense logo">
-              </div>
-              Virtual reality game created for the Oculus Rift and HTC Vive. It was made with Unity, and coded in C#.
-            </div>
-          </div>
-          <footer class="card-footer">
-            <a href="https://github.com/toddkc/Tabletop-Defense-Lite" target="_blank" class="card-footer-item">GitHub</a>
-            <a href="https://harmonicminor.itch.io/tabletop-defense" target="_blank" class="card-footer-item">Itch.io</a>
-            <a href="https://youtu.be/Uaqox-ExtqM" target="_blank" class="card-footer-item">YouTube</a>
-          </footer>
-        </div>
-        <div class="card">
-          <header class="card-header">
-            <p class="card-header-title">
-              Task Roulette
-            </p>
-          </header>
-          <div class="card-content">
-            <div class="content">
-              <div class="card-image">
-                <img src="./assets/app.png" alt="task roulette screenshot">
-              </div>
-              Web-app that allows users to create and store tasks. The app will keep track of when the task was last done, and alert the user when it needs to be done again. The back-end is a MySQL database and a Node/Express app hosted on a DigitalOcean droplet. The
-              front-end is a Vue.js app hosted on Heroku.
-            </div>
-          </div>
-          <footer class="card-footer">
-            <a href="https://github.com/toddkc/taskroulette-server" target="_blank" class="card-footer-item">GitHub - server</a>
-            <a href="https://github.com/toddkc/taskroulette-heroku" target="_blank" class="card-footer-item">GitHub - client</a>
-            <a href="https://taskroulette.herokuapp.com" target="_blank" class="card-footer-item">Website</a>
-          </footer>
-        </div>
-        <div class="card">
-          <header class="card-header">
-            <p class="card-header-title">
-              Gallery VR
-            </p>
-          </header>
-          <div class="card-content">
-            <div class="content">
-              <div class="card-image">
-                <img src="./assets/gallery2.png" alt="gallery screenshot">
-              </div>
-              Virtual Reality environment designed for artists to showcase their work. Created with Unity and coded in C#. Works with Oculus Rift, HTC Vive, Android devices, Google Cardboard, and Windows 10.
-            </div>
-          </div>
-          <footer class="card-footer">
-            <a href="https://github.com/toddkc/GalleryVR" target="_blank" class="card-footer-item">GitHub</a>
-            <a href="https://harmonicminor.itch.io/gallery-vr" target="_blank" class="card-footer-item">Itch.io</a>
-            <a href="https://youtu.be/vOoMcONrTHY" target="_blank" class="card-footer-item">YouTube</a>
-          </footer>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <div class="card">
-          <header class="card-header">
-            <p class="card-header-title">
-              Skills
-            </p>
-          </header>
-          <div class="card-content">
-            <div class="content">
-              Feel free to look through my GitHub to see examples of the tools I have worked with. I have made express apps with node using passport for user validation, sequelize for database integration, express-session for session persistance. I have made vue apps
-              with vuex for state management and axios for api requests, using frameworks like bulma and bootstrap. I've made games with unity using mecanim and blender for modeling and animating, and created character controllers for 2D, 3D, and virtual
-              reality. Some highlights:
-              <ul>
-                <li>Node.js</li>
-                <li>Express.js</li>
-                <li>Vue.js</li>
-                <li>JavaScript</li>
-                <li>C#</li>
-                <li>Unity</li>
-                <li>CSS</li>
-                <li>HTML</li>
-                <li>jQuery</li>
-                <li>Passport.js</li>
-                <li>Sequelize</li>
-                <li>MySQL</li>
-                <li>MondoDB</li>
-                <li>Git</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="containerContact">
+      <div class="contactLink"><a href="https://github.com/toddkc" target="_blank"><span class="fa fa-github fa-lg" title="GitHub"></span></a></div>
+      <div class="contactLink"><a href="https://www.linkedin.com/in/todd-belcher" target="_blank"><span class="fa fa-linkedin-square fa-lg" title="LinkedIn"></span></a></div>
+      <div class="contactLink"><a href="https://codepen.io/toddkc/" target="_blank"><span class="fa fa-codepen fa-lg" title="CodePen"></span></a></div>
+    </div>
+    <div class="containerRight">
+      <div class="contactLink"><a href="mailto:todd@todd-belcher.com"><span class="fa fa-envelope-o fa-lg" title="Contact Me"></span></a></div>
+    </div>
+  </nav>
+
+  <!-- about me section -->
+  <div id="pageTop" class="containerInfo">
+    <div class="infoMe">
+      <h1>Todd Belcher</h1>
+      <!-- <h3>About Me</h3> -->
+      <p>I am a fullstack developer located in Kansas City, Missouri. I work primarily with Javascript and C# creating websites, database systems, and entertainment software.</p>
+      <p>As a hobby I enjoy learning and creating anything and everything related to virtual reality, using programs such as Unity 3D, Unreal Engine, and WebVR.</p>
+      <p>When I'm not programming I spend time playing guitar, piano, drums, and violin. You may also find me outside with my wife Nikki rock climbing, hiking, or biking.</p>
+    </div>
+    <div class="imgMe">
+      <img class="profilePic" src="images/todd.jpg" alt="Me, Todd Belcher">
+    </div>
   </div>
-  <script src="modal.js"></script>
+
+  <!-- portofolio -->
+  <div class="portfolioContainer">
+    <div class="portfolioTitle">
+      <h3>Projects I've Created</h3>
+    </div>
+    <div class="portfolioRow">
+      <div class="corners">
+        <div class="portfolioImg tdPic"><a target="_blank" href="https://harmonicminor.itch.io/tabletop-defense"></a></div>
+        <div class="portfolioText">
+          <h3>Tabletop Defense</h3>
+          <p>Virtual reality game designed for the Oculus Rift and HTC Vive.</p>
+          <p><a href="https://github.com/toddkc/Tabletop-Defense-Lite" target="_blank">Github Project</a></p>
+        </div>
+      </div>
+      <div class="corners">
+        <div class="portfolioImg galleryPic"><a target="_blank" href="https://harmonicminor.itch.io/gallery-vr"></a></div>
+        <div class="portfolioText">
+          <h3>Gallery</h3>
+          <p>Oculus Rift and HTC Vive environment to create and host virtual reality art shows.</p>
+          <p><a href="https://github.com/toddkc/GalleryVR" target="_blank">Github Project</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="portfolioRow">
+      <div class="corners">
+        <div class="portfolioImg moviePic"><a target="_blank" href="https://github.com/toddkc/Movielist"></a></div>
+        <div class="portfolioText">
+          <h3>Movielist</h3>
+          <p>Create, edit, and save basic info about movies. Uses mongoDB, express, vue, and node. Also has pug endpoints for use without vue app.</p>
+          <p><a href="https://github.com/toddkc/Movielist" target="_blank">Github Project</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="portfolioRow">
+      <div class="corners">
+        <div class="portfolioImg velcroPic"><a target="_blank" href="velcro/index.html"></a></div>
+        <div class="portfolioText">
+          <h3>Velcro.css</h3>
+          <p>Basic css library to quickly do some styling and layout.</p>
+          <p><a href="https://github.com/toddkc/velcro.css" target="_blank">Github Project</a></p>
+        </div>
+      </div>
+      <div class="corners">
+        <div class="portfolioImg foodPic"><a target="_blank" href="food_finder/index.html"></a></div>
+        <div class="portfolioText">
+          <h3>Food Finder</h3>
+          <p>Nutrition database. Create and save recipes.</p>
+          <p><a href="https://github.com/toddkc/FoodFinder" target="_blank">Github Project</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- tools -->
+  <div class="toolkitContainer">
+    <div class="toolkitTitle">
+      <h3>Technologies I Use</h3>
+    </div>
+    <div class="toolkitRow">
+      <div class="toolkitItem">
+        <img class="toolkitImg" src="images/mongo.png" alt="">
+      </div>
+      <div class="toolkitItem">
+        <img class="toolkitImg" src="images/express.png" alt="">
+      </div>
+      <div class="toolkitItem">
+        <img class="toolkitImg" src="images/vue.png" alt="">
+      </div>
+      <div class="toolkitItem">
+        <img class="toolkitImg" src="images/node.png" alt="">
+      </div>
+    </div>
+    <div class="toolkitRow">
+      <div class="toolkitItem">
+        <img class="toolkitImg" src="images/html.png" alt="">
+      </div>
+      <div class="toolkitItem">
+        <img class="toolkitImg" src="images/css.png" alt="">
+      </div>
+      <div class="toolkitItem">
+        <img class="toolkitImg" src="images/js.png" alt="">
+      </div>
+    </div>
+    <div class="toolkitRow">
+      <div class="toolkitItem">
+        <img class="toolkitImg" src="images/bootstrap-4.svg" alt="">
+      </div>
+      <div class="toolkitItem">
+        <img class="toolkitImg" src="images/csharp.svg" alt="">
+      </div>
+      <div class="toolkitItem">
+        <img class="toolkitImg" src="images/git.jpeg" alt="">
+      </div>
+      <div class="toolkitItem">
+        <img class="toolkitImg" src="images/unity.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p class="copyright"><a href="mailto:todd@todd-belcher.com">Todd Belcher</a><span class="fa fa-copyright"></span> 2017</p>
+    <p class="location"><a target="_blank" href="https://en.wikipedia.org/wiki/Kansas_City,_Missouri">Kansas City</a></p>
+  </footer>
 </body>
 
 </html>

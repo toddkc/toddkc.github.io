@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Nutrition Information and Recipe Creation">
+  	<meta name="keywords" content="Food, Recipe, Nutrition">
+  	<meta name="author" content="Todd Belcher">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Food Finder</title>
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<div class="content">
+
+			<div class="search">
+				<input type="text" value="" placeholder="Search for..." id="searchInput">
+				<input type="submit" value="Search" id="searchButton">
+			</div>
+
+			<div class="logo"></div>
+
+			<div class="itemContainer">
+				<div class="itemImage"></div>
+				<h3 id="itemTitle"></h3>
+				<div class="itemInfo">
+					<div class="itemDetailsPanel">
+						<p class="itemDetails">Serving Size: </p>
+						<p class="itemDetails">Serving Amount: </p>
+						<p class="itemDetails">Calories: </p>
+						<p class="itemDetails">Cholesterol: </p>
+						<p class="itemDetails">Fiber: </p>
+					</div>
+
+					<div class="itemDetailsPanel">
+						<p class="itemDetails">Protein: </p>
+						<p class="itemDetails">Saturated Fat: </p>
+						<p class="itemDetails">Total Fat: </p>
+						<p class="itemDetails">Carbs: </p>
+						<p class="itemDetails">Sodium: </p>
+					</div>
+				</div>
+				<div class="foodSave">
+					<input type="submit" value="Save to Recipe" id="saveButton">
+				</div>
+			</div>
+
+			<div class="recipeContainer">
+				<h3 id="recipeTitle"></h3>
+				<div class="recipeInfo">
+					<div class="recipeDetailsPanel">
+						<p class="recipeDetails"></p>
+						<p class="recipeDetails"></p>
+						<p class="recipeDetails"></p>
+						<p class="recipeDetails"></p>
+					</div>
+					<div class="recipeDetailsPanel">
+						<p class="recipeDetails"></p>
+						<p class="recipeDetails"></p>
+						<p class="recipeDetails"></p>
+						<p class="recipeDetails"></p>
+					</div>
+				</div>
+				<div class="recipeIngredients">
+					<h4>Ingredients</h4>
+					<div class="recipeIngredientsPanel"></div>
+				</div>
+				<div class="recipeButtons">
+					<input type="submit" value="Hide Recipe" id="hideRecipe">
+					<input type="submit" value="Rename Recipe" id="renameRecipe">
+					<input type="submit" value="Delete Recipe" id="deleteRecipe">
+				</div>
+			</div>
+
+			<div class="recipeBookPanel"></div>
+
+			<div class="menuBar">
+				<div>
+					<input id="recipeBookButton" type="submit" value="Recipe Book">
+					<input id="newRecipe" type="submit" value="New Recipe">
+				</div>
+				<div>
+					<a href="help.html" target="_blank">Need help?</a>
+				</div>
+				<div>
+					<p id="currentRecipe"></p>
+				</div>
+			</div>
+
+			<div class="searchFail"><p>Nothing found, sorry...</p></div>
+			<div class="saved"><h1>Saved!</h1></div>
+
+		<!-- closing "content" div -->
+		</div>
+		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/items.js"></script>
+		<script type="text/javascript" src="js/recipes.js"></script>
+		<script type="text/javascript" src="js/setup.js"></script>
+	</body>
+</html>
