@@ -136,3 +136,9 @@ img {
     flex-direction: row;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .hero h3 {
+    font-size: 0.9rem;
+  }
+}
